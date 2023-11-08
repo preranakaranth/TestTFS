@@ -1,0 +1,50 @@
+{
+  "name": "boil",
+  "version": "0.0.1",
+  "description": "React Boilerplate",
+  "main": "dist/lib/boil.js",
+  "scripts": {
+    "dev": "npm run -s compile:watch",
+    "compile": "webpack --config config.webpack.js",
+    "compile:watch": "npm run -s compile -- --watch",
+    "test": "istanbul cover mocha tests"
+  },
+  "bin": "dist/bin/cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wufe/reactboilerplate.git"
+  },
+  "author": "Simone Bembi <simone.bembi@gmail.com> (https://wufe.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wufe/reactboilerplate/issues"
+  },
+  "contributors": [],
+  "homepage": "https://github.com/wufe/reactboilerplate#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "react-particles-js": "^1.4.0"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "istanbul": "^0.4.5",
+    "json-loader": "^0.5.4",
+    "mocha": "^3.1.1",
+    "mocha-istanbul": "^0.3.0",
+    "node-loader": "^0.6.0",
+    "npm-run-all": "^3.1.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-markdown": "^2.4.5",
+    "should": "^11.1.1",
+    "source-map-loader": "^0.1.5",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^2.0.1",
+    "typescript": "^2.2.1",
+    "typings": "^2.1.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2"
+  }
+}
